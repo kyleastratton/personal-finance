@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Finance App</title>
+  <link rel="stylesheet" href="style/main.css" />
+</head>
+<body>
+  <header>
+    <h1>Personal Finance Tracker</h1>
+    <button class="btn" id="theme-toggle">Toggle Theme</button>
+  </header>
+
+  <nav>
+    <button data-tab="budget">Budget</button>
+    <button data-tab="networth">Net Worth</button>
+  </nav>
+
+  <main>
+    <section id="budget" class="tab-content"></section>
+    <section id="networth" class="tab-content hidden"></section>
+  </main>
+
+  <footer>
+    <button id="export-data">Export JSON</button>
+    <input type="file" id="import-data" accept="application/json" />
+  </footer>
+
+  <script type="module" src="scripts/app.js"></script>
+</body>
+</html>
