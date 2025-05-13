@@ -69,7 +69,7 @@
     display: none;
   }
 
-  .btn {
+  .btn, input[type="file"] {
     padding: 0.5rem;
     border-radius: 0.25rem;
     border: 1px solid var(--secondary);
@@ -101,6 +101,7 @@
     width: 100%;
   }
 
+
   .card-row input,
   .card-row select {
     padding: 0.5rem;
@@ -127,6 +128,10 @@
     font-size: 1rem;
   }
 
+  #import-data {
+    margin-right: 1rem;
+  }
+
   @media (max-width: 768px) { 
     .card-row {
       display: flex;
@@ -147,6 +152,15 @@
 
     .btn {
       margin-left: 0.2rem;
+    }
+
+    #import-data {
+      margin-right: 0.2rem;
+    }
+
+    footer button,
+    footer input[type="file"] {
+      font-size: 0.8rem;
     }
   }
   
